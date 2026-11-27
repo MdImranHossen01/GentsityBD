@@ -69,7 +69,7 @@ export default function AdminTopbar() {
                 </DropdownMenuLabel>
               </DropdownMenuGroup>
               <DropdownMenuSeparator />
-              <DropdownMenuItem render={<Link href="/admin/dashboard" />} nativeButton={false}>
+              <DropdownMenuItem render={<Link prefetch={false} href="/admin/dashboard" />} nativeButton={false}>
                 <LayoutDashboard className="mr-2 h-4 w-4" />
                 <span>Admin Dashboard</span>
               </DropdownMenuItem>
@@ -77,7 +77,7 @@ export default function AdminTopbar() {
                 <Store className="mr-2 h-4 w-4" />
                 <span>Visit Shop</span>
               </DropdownMenuItem>
-              <DropdownMenuItem render={<Link href="/admin/settings" />} nativeButton={false}>
+              <DropdownMenuItem render={<Link prefetch={false} href="/admin/settings" />} nativeButton={false}>
                 <Settings className="mr-2 h-4 w-4" />
                 <span>Settings</span>
               </DropdownMenuItem>
